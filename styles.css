@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url(images/headerbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+  color: rgb(148, 19, 19);
+  padding: 7% 0 7% 0;
+}
+
+section {
+  display: flex;
+  padding-bottom: 5%;
+  width: 100%;
+  height: auto;
+  background-color: #cac3b9;
+  color: #383a3d;
+}
+
+section:last-of-type {
+  padding-bottom: 0;
+}
+
+.sectiontext {
+  text-align: center;
+  width: 50%;
+  padding: 3% 5% 5% 5%;
+  height: auto;
+}
+
+section h2 {
+  font-family: sans-serif;
+  text-decoration: underline;
+  margin-bottom: 10%;
+  font-size: 2.2em;
+}
+
+section p {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+
+.sectionimg {
+  width: 50%;
+  height: auto;
+}
+
+#booking {
+  text-align: center;
+  background-color: #69717d;
+  padding: 5%;
+  font-family: sans-serif;
+  outline-offset: -15px;
+  outline: 3px inset rgba(0, 0, 0, 0.772);
+  color: rgba(0, 0, 0, 0.772);
+}
+
+#booking h2 {
+  font-size: 3em;
+  margin-bottom: 5%;
+  text-decoration: underline;
+}
+
+#booking p {
+  font-size: 3em;
+}
+
+footer {
+  text-align: center;
+  background-color: #3a4350;
+  height: fit-content;
+  padding: 2%;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  header {
+    font-size: 5em;
+  }
+
+  section p {
+    line-height: 2;
+  }
+
+  section h2 {
+    font-size: 3em;
+  }
+
+  .sectiontext {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-left: 1px solid #383a3d;
+    border-right: 1px solid #383a3d;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .sectiontext {
+    padding: 0;
+    width: 75%;
+  }
+
+  section img {
+    margin-bottom: 2%;
+    border-radius: 15px;
+  }
+
+  section:last-of-type {
+    padding-bottom: 3%;
+  }
+
+  .sectionimg {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sectiontext {
+    width: 75%;
+  }
+
+  section img {
+    border-radius: 15px;
+  }
+
+  section p {
+    font-size: 1em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  #booking h2 {
+    font-size: 2em;
+  }
+
+  #booking p {
+    font-size: 1.5em;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+}
